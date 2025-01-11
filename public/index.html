@@ -10,18 +10,10 @@
 </head>
 
 <body>
-  <mpy-config>
-    <!-- uncomment to use MicroPython -->
-    <!-- interpreter = "/micropython/micropython.mjs" -->
-    interpreter = "/pyodide/pyodide.mjs"
-  </mpy-config>
+  <div id="app">Loading...</div>
   <!-- uncomment to use MicroPython -->
-  <!-- <script type="mpy"> -->
-  <script type="py">
-    from pyscript import document
-
-    document.body.append("Hello from PyScript")
-  </script>
+  <!-- <script type="mpy" src="./main.py" config="./pyscript.toml"></script> -->
+  <script type="py" src="./main.py" config="./pyscript.toml"></script>
 </body>
 
 </html>
