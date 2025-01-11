@@ -1,3 +1,12 @@
-from pyscript import document
+from puepy import Application, Page, t
 
-document.body.append("Hello from PyScript")
+app = Application()
+
+
+@app.page()
+class HelloWorldPage(Page):
+    def populate(self):
+        t.h1("Hello, World!")
+
+
+app.mount("#app")

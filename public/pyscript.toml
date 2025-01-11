@@ -1,4 +1,3 @@
-
 packages = ["./whl/puepy-0.4.6-py3-none-any.whl"]
 
 # interpreter = "./micropython/micropython.mjs"  # micropython
