@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyScript Offline</title>
+  <script type="module" src="/pyscript/core.js"></script>
+  <link rel="stylesheet" href="/pyscript/core.css">
+</head>
+
+<body>
+  <mpy-config>
+    <!-- uncomment to use MicroPython -->
+    <!-- interpreter = "/micropython/micropython.mjs" -->
+    interpreter = "/pyodide/pyodide.mjs"
+  </mpy-config>
+  <!-- uncomment to use MicroPython -->
+  <!-- <script type="mpy"> -->
+  <script type="py">
+    from pyscript import document
+
+    document.body.append("Hello from PyScript")
+  </script>
+</body>
+
+</html>
